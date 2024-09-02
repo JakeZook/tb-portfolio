@@ -22,7 +22,7 @@ const BloomingAnimation = ({ reverse, petalColor, centerColor }) => {
 	const petals = Array.from({ length: 8 });
 
 	return (
-		<div className="relative w-64 h-64">
+		<div className="relative w-64 h-64 max-sm:w-32 max-sm:h-32">
 			<div
 				className={`absolute ${
 					reverse ? "h-48 left-[4rem]" : "h-[17.5rem] left-[-2.5rem]"
@@ -46,7 +46,7 @@ const BloomingAnimation = ({ reverse, petalColor, centerColor }) => {
 				/>
 			))}
 			<motion.div
-				className={`absolute w-16 h-16 ${centerColor} rounded-full`}
+				className={`absolute w-16 h-16 ${centerColor} rounded-full top-[6rem]`}
 				initial={{ scale: 0 }}
 				animate={{ scale: 1 }}
 				transition={{
@@ -57,7 +57,6 @@ const BloomingAnimation = ({ reverse, petalColor, centerColor }) => {
 					damping: 10,
 				}}
 				style={{
-					top: "38%",
 					transform: "translate(-50%, -50%)",
 				}}
 			/>

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { BloomingAnimation, Header, Carousel, About } from "./comp";
+import { BloomingAnimation, Header, Carousel, About, Diff } from "./comp";
 
 const App = () => {
 	return (
@@ -53,6 +53,9 @@ const App = () => {
 						/>
 					</div>
 				</div>
+			</div>
+			<div className="bg-emerald-950 mt-12">
+				<Diff />
 			</div>
 			<div className="flex justify-center mt-12 max-sm:mt-32">
 				<Carousel />

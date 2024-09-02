@@ -22,7 +22,11 @@ const BloomingAnimation = ({ reverse, petalColor, centerColor }) => {
 	const petals = Array.from({ length: 8 });
 
 	return (
-		<div className="relative w-64 h-64 max-sm:w-32 max-sm:h-32">
+		<motion.div
+			className="relative w-64 h-64 max-sm:w-32 max-sm:h-32"
+			whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
+			whileTap={{ scale: 0.9 }}
+		>
 			{petals.map((_, i) => (
 				<motion.div
 					key={i}
@@ -51,7 +55,7 @@ const BloomingAnimation = ({ reverse, petalColor, centerColor }) => {
 					transform: "translate(-50%, -50%)",
 				}}
 			/>
-		</div>
+		</motion.div>
 	);
 };
 

@@ -1,4 +1,5 @@
 import BloomingAnimation from "./BloomingAnimation";
 import Carousel from "./Carousel";
+import About from "./About";
 
-export { BloomingAnimation, Carousel };
+export { BloomingAnimation, Carousel, About };

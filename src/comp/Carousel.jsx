@@ -28,7 +28,7 @@ const Carousel = () => {
 					<img
 						src={img}
 						alt="carousel image"
-						className="rounded-box drop-shadow-[-5px_5px_5px_rgba(0,0,0,.25)] object-cover w-64 h-64"
+						className="rounded-box drop-shadow-[-5px_5px_5px_rgba(0,0,0,.5)] object-cover w-64 h-64"
 					/>
 				</div>
 			))}

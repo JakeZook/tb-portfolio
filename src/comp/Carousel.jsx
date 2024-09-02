@@ -1,48 +1,37 @@
+import Arch from "../assets/Arch.jpg";
+import Arch2 from "../assets/Arch2.jpg";
+import Center from "../assets/Center.jpg";
+import Chairs from "../assets/Chairs.jpg";
+import Couple from "../assets/Couple.jpg";
+import Couple2 from "../assets/Couple2.jpg";
+import Flowers from "../assets/Flowers.jpg";
+import Isle from "../assets/Isle.jpg";
+import Table from "../assets/Table.jpg";
+
 const Carousel = () => {
+	const images = [
+		Arch,
+		Arch2,
+		Center,
+		Chairs,
+		Couple,
+		Couple2,
+		Flowers,
+		Isle,
+		Table,
+	];
+
 	return (
-		<div className="carousel carousel-center bg-neutral rounded-box max-w-fit space-x-4 p-4">
-			<div className="carousel-item">
-				<img
-					src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-					className="rounded-box"
-				/>
-			</div>
-			<div className="carousel-item">
-				<img
-					src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-					className="rounded-box"
-				/>
-			</div>
-			<div className="carousel-item">
-				<img
-					src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-					className="rounded-box"
-				/>
-			</div>
-			<div className="carousel-item">
-				<img
-					src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
-					className="rounded-box"
-				/>
-			</div>
-			<div className="carousel-item">
-				<img
-					src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
-					className="rounded-box"
-				/>
-			</div>
-			<div className="carousel-item">
-				<img
-					src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
-					className="rounded-box"
-				/>
-			</div>
-			<div className="carousel-item">
-				<img
-					src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
-					className="rounded-box"
-				/>
-			</div>
+		<div className="carousel carousel-center bg-base-300 rounded-box max-w-fit space-x-4 p-4">
+			{images.map((img, i) => (
+				<div key={i} className="carousel-item">
+					<img
+						src={img}
+						alt="carousel image"
+						className="rounded-box drop-shadow-[-5px_5px_5px_rgba(0,0,0,.25)] object-cover w-64 h-64"
+					/>
+				</div>
+			))}
 		</div>
 	);
 };

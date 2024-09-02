@@ -23,7 +23,7 @@ const App = () => {
 							/>
 						</div>
 					</div>
-					<div className="mr-10 max-lg:flex max-lg:flex-col justify-center items-center max-lg:mt-14">
+					<div className="lg:mr-10 max-lg:flex max-lg:flex-col justify-center items-center mt-14">
 						<h1 className="text-5xl font-bold text-pink-500 font-pacifico whitespace-pre max-lg:text-center">
 							{header.split("").map((char, index) => (
 								<span
@@ -36,7 +36,7 @@ const App = () => {
 								</span>
 							))}
 						</h1>
-						<p className="py-6 max-lg:text-center md:mr-12 text-md text-accent lg:border-l-4 lg:border-green-500 lg:pl-4 drop-shadow-lg my-3 font-playfair">
+						<p className="py-6 text-md max-lg:text-center md:mr-12 text-md text-accent lg:border-l-4 lg:border-green-500 lg:pl-4 drop-shadow-lg my-3 font-playfair">
 							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
 							excepturi exercitationem quasi. In deleniti eaque aut repudiandae
 							et a id nisi.
@@ -45,7 +45,7 @@ const App = () => {
 							Contact Me!
 						</button>
 					</div>
-					<div className="flex justify-center lg:hidden mt-6 max-md:ml-8">
+					<div className="flex justify-center lg:hidden mt-6 max-lg:ml-16">
 						<BloomingAnimation
 							reverse={false}
 							petalColor="bg-pink-500"
@@ -54,7 +54,7 @@ const App = () => {
 					</div>
 				</div>
 			</div>
-			<div className="mt-48 bg-base-300">
+			<div className="bg-base-300 flex justify-center">
 				<Carousel />
 			</div>
 		</div>

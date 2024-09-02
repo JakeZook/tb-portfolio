@@ -23,15 +23,6 @@ const BloomingAnimation = ({ reverse, petalColor, centerColor }) => {
 
 	return (
 		<div className="relative w-64 h-64 max-sm:w-32 max-sm:h-32">
-			<div
-				className={`absolute ${
-					reverse ? "h-48 left-[4rem]" : "h-[17.5rem] left-[-2.5rem]"
-				} w-6 bg-green-500 top-[12rem] transform -translate-x-1`}
-				style={{
-					transformOrigin: "bottom center",
-					transform: reverse ? "rotate(-15deg)" : "rotate(15deg)",
-				}}
-			></div>
 			{petals.map((_, i) => (
 				<motion.div
 					key={i}

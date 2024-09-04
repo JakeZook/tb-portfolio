@@ -1,23 +1,25 @@
 import Arch from "../assets/Arch.jpg";
 import Arch2 from "../assets/Arch2.jpg";
-import Center from "../assets/Center.jpg";
 import Chairs from "../assets/Chairs.jpg";
 import Couple from "../assets/Couple.jpg";
-import Roses from "../assets/Roses.jpg";
-import Flowers from "../assets/Flowers.jpg";
+import Couple2 from "../assets/Couple2.jpg";
+import Couple4 from "../assets/Couple4.jpg";
+import Couple5 from "../assets/Couple5.jpg";
+import Couple6 from "../assets/Couple6.jpg";
+import Couple7 from "../assets/Couple7.jpg";
 import Isle from "../assets/Isle.jpg";
-import Table from "../assets/Table.jpg";
 
 const images = [
+	Couple7,
 	Arch,
 	Couple,
-	Center,
-	Flowers,
-	Table,
-	Roses,
-	Chairs,
-	Isle,
 	Arch2,
+	Couple6,
+	Chairs,
+	Couple5,
+	Isle,
+	Couple2,
+	Couple4,
 ];
 
 export default images;

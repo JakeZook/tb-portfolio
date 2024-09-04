@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { Hero, Carousel, About, Diff } from "./comp";
-import { ImageSet1, ImageSet2 } from "./Utils/Index";
+import { Hero, Carousel, About, Resume } from "./comp";
+import { ImageSet1, ImageSet2, ImageSet3 } from "./Utils/Index";
 
 import BG from "./assets/BG.png";
 
 const App = () => {
 	return (
-		<div className="bg-emerald-950">
+		<div className="bg-emerald-900">
 			<Hero />
 			<motion.div
 				initial={{ opacity: 0 }}
@@ -23,13 +23,23 @@ const App = () => {
 				<About />
 			</div>
 			<motion.div
-				className="flex justify-center mt-6"
+				className="flex justify-center my-6"
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: true, amount: 0.25 }}
 				transition={{ duration: 1 }}
 			>
 				<Carousel images={ImageSet2} />
+			</motion.div>
+			<Resume />
+			<motion.div
+				className="flex justify-center mt-6"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				viewport={{ once: true, amount: 0.25 }}
+				transition={{ duration: 1 }}
+			>
+				<Carousel images={ImageSet3} />
 			</motion.div>
 		</div>
 	);

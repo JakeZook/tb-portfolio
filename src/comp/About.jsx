@@ -1,30 +1,41 @@
+import { motion } from "framer-motion";
+
 import Header from "./Header";
 import Profile from "../assets/Profile.jpg";
+import BG from "../assets/BG.png";
 
 const About = () => {
 	return (
-		<div className="text-white flex justify-between items-center mt-12 max-lg:flex-col">
-			<div className="w-96 max-lg:hidden">
-				<img className="mask mask-circle" src={Profile} alt="Profile Pic" />
-			</div>
-			<div className="flex flex-col lg:items-end items-center mx-12 w-2/3">
-				<Header header="About" />
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true, amount: 0.25 }}
+			transition={{ duration: 1 }}
+			className="hero items-start lg:py-24"
+			style={{ backgroundImage: `url(${BG})` }}
+		>
+			<div className="hero-content flex-col lg:flex-row max-sm:gap-0">
 				<img
-					className="lg:hidden mask mask-circle ml-2 my-6 w-2/3"
 					src={Profile}
 					alt="Profile Pic"
+					className="hidden lg:flex mask mask-circle"
 				/>
-				<p className="py-6 text-3xl max-sm:text-sm max-lg:text-center lg:ml-12 text-md text-end text-white lg:border-r-4 lg:border-primary lg:pr-4 drop-shadow-lg my-3 font-playfair">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-					consequuntur sint dolorem, dicta possimus amet aspernatur, accusamus
-					labore reprehenderit quis vero corporis, perspiciatis eum. Velit
-					nulla, quod iste ut ratione ipsum architecto ullam perferendis
-					doloremque. Ab deserunt quisquam minus, rem veritatis accusantium
-					voluptatibus. Excepturi voluptatibus velit reiciendis laudantium
-					fugiat sapiente.
-				</p>
+				<div className="lg:ml-10 flex flex-col items-center lg:justify-end lg:items-end">
+					<Header header="About" />
+					<p className="py-6 text-md text-end max-lg:text-center md:ml-12 text-2xl text-white lg:border-r-4 lg:border-primary lg:pr-4 drop-shadow-lg my-3 font-playfair max-sm:bg-black max-sm:bg-opacity-45">
+						Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+						excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+						a id nisi.
+					</p>
+					<button className="btn btn-lg btn-primary hover:scale-110 hover:text-white font-playfair w-1/3 max-sm:w-full">
+						Contact Me!
+					</button>
+				</div>
+				<div className="flex justify-center lg:hidden mt-6">
+					<img src={Profile} alt="Profile Pic" className="mask mask-circle" />
+				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

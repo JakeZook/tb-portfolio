@@ -29,7 +29,7 @@ const Carousel = ({ images, header }) => {
 			</h1>
 			<div
 				ref={carouselRef}
-				className="carousel carousel-center bg-emerald-900 rounded-box max-w-fit space-x-4 p-4 flex overflow-x-auto scroll-smooth"
+				className="carousel carousel-center bg-emerald-900 rounded-box max-w-fit space-x-4 p-10 flex overflow-x-auto scroll-smooth"
 			>
 				{images.map((img, i) => (
 					<div key={i} className="carousel-item flex-shrink-0">
@@ -44,13 +44,13 @@ const Carousel = ({ images, header }) => {
 				))}
 			</div>
 			<button
-				className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-primary p-2 rounded-full hover:scale-125 hover:bg-secondary hover:text-white max-sm:hidden"
+				className="absolute top-[55%] left-2 transform -translate-y-1/2 bg-primary p-2 rounded-full hover:scale-125 hover:bg-secondary hover:text-white max-sm:hidden"
 				onClick={handlePrev}
 			>
 				❮
 			</button>
 			<button
-				className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-primary p-2 rounded-full hover:scale-125 hover:bg-secondary hover:text-white max-sm:hidden"
+				className="absolute top-[55%] right-2 transform -translate-y-1/2 bg-primary p-2 rounded-full hover:scale-125 hover:bg-secondary hover:text-white max-sm:hidden"
 				onClick={handleNext}
 			>
 				❯

@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import "./Page.css";
+
 import Header from "./Header";
 import BG from "../assets/BG.png";
 
@@ -19,7 +21,7 @@ const Resume = () => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
-							fill="white"
+							fill="oklch(80.7415% 0.052534 159.094608 / 1)"
 							className="h-5 w-5"
 						>
 							<path
@@ -29,12 +31,12 @@ const Resume = () => {
 							/>
 						</svg>
 					</div>
-					<div className="timeline-start mb-10 md:text-end text-white bg-black bg-opacity-45 p-4 font-playfair max-md:w-[90%]">
+					<div className="timeline-start mb-10 md:text-end text-white p-4 font-playfair max-md:w-[90%] outlined text-xl">
 						<time className="italic text-accent">2019 - Present</time>
-						<div className="text-lg font-black text-primary">
+						<div className="font-black text-primary">
 							Freelance Floral Designer
 						</div>
-						<div className="text-lg font-black text-white">
+						<div className="font-black text-white outlined-doubled">
 							Denver, Colorado
 						</div>
 					</div>
@@ -51,7 +53,7 @@ const Resume = () => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
-							fill="white"
+							fill="oklch(80.7415% 0.052534 159.094608 / 1)"
 							className="h-5 w-5"
 						>
 							<path
@@ -61,13 +63,13 @@ const Resume = () => {
 							/>
 						</svg>
 					</div>
-					<div className="timeline-end  text-white bg-black bg-opacity-45 p-4 font-playfair max-md:w-[90%]">
+					<div className="timeline-end  text-white p-4 font-playfair max-md:w-[90%] outlined text-xl">
 						<time className="italic text-accent">2017 - 2021</time>
-						<div className="text-lg font-black text-primary">Lead Designer</div>
-						<div className="text-lg font-black text-secondary">
+						<div className="font-black text-primary">Lead Designer</div>
+						<div className="font-black text-secondary">
 							Little Hill Floral Designs
 						</div>
-						<div className="text-lg font-black text-white">
+						<div className="font-black text-white outlined-doubled">
 							Huntington Beach, California
 						</div>
 					</div>
@@ -84,7 +86,7 @@ const Resume = () => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
-							fill="white"
+							fill="oklch(80.7415% 0.052534 159.094608 / 1)"
 							className="h-5 w-5"
 						>
 							<path
@@ -94,15 +96,13 @@ const Resume = () => {
 							/>
 						</svg>
 					</div>
-					<div className="timeline-start mb-10 md:text-end text-white bg-black bg-opacity-45 p-4 font-playfair max-md:w-[90%]">
+					<div className="timeline-start mb-10 md:text-end text-white p-4 font-playfair max-md:w-[90%] outlined text-xl">
 						<time className="italic text-accent">2016 - 2018</time>
-						<div className="text-lg font-black text-primary">
-							Floral Designer
-						</div>
-						<div className="text-lg font-black text-secondary">
+						<div className="font-black text-primary">Floral Designer</div>
+						<div className="font-black text-secondary">
 							Rolling Hills Flower Market
 						</div>
-						<div className="text-lg font-black text-white">
+						<div className="font-black text-white outlined-doubled">
 							Manhattan Beach, California
 						</div>
 					</div>
@@ -120,7 +120,7 @@ const Resume = () => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
-							fill="white"
+							fill="oklch(80.7415% 0.052534 159.094608 / 1)"
 							className="h-5 w-5"
 						>
 							<path
@@ -130,12 +130,12 @@ const Resume = () => {
 							/>
 						</svg>
 					</div>
-					<div className="timeline-start mb-10 md:text-end text-white bg-black bg-opacity-45 p-4 font-playfair max-md:w-[90%]">
+					<div className="timeline-start mb-10 md:text-end text-white p-4 font-playfair max-md:w-[90%] outlined text-xl">
 						<time className="italic text-accent">2019 - Present</time>
-						<div className="text-lg font-black text-primary">
+						<div className="font-black text-primary">
 							Freelance Floral Designer
 						</div>
-						<div className="text-lg font-black text-white">
+						<div className="font-black text-white outlined-doubled">
 							Denver, Colorado
 						</div>
 					</div>
@@ -152,7 +152,7 @@ const Resume = () => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
-							fill="white"
+							fill="oklch(80.7415% 0.052534 159.094608 / 1)"
 							className="h-5 w-5"
 						>
 							<path
@@ -162,13 +162,13 @@ const Resume = () => {
 							/>
 						</svg>
 					</div>
-					<div className="timeline-end  text-white bg-black bg-opacity-45 p-4 font-playfair max-md:w-[90%]">
+					<div className="timeline-end  text-white p-4 font-playfair max-md:w-[90%] outlined text-xl">
 						<time className="italic text-accent">2017 - 2021</time>
-						<div className="text-lg font-black text-primary">Lead Designer</div>
-						<div className="text-lg font-black text-secondary">
+						<div className="font-black text-primary">Lead Designer</div>
+						<div className="font-black text-secondary">
 							Little Hill Floral Designs
 						</div>
-						<div className="text-lg font-black text-white">
+						<div className="font-black text-white outlined-doubled">
 							Huntington Beach, California
 						</div>
 					</div>
@@ -185,7 +185,7 @@ const Resume = () => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
-							fill="white"
+							fill="oklch(80.7415% 0.052534 159.094608 / 1)"
 							className="h-5 w-5"
 						>
 							<path
@@ -195,15 +195,13 @@ const Resume = () => {
 							/>
 						</svg>
 					</div>
-					<div className="timeline-start mb-10 md:text-end text-white bg-black bg-opacity-45 p-4 font-playfair max-md:w-[90%]">
+					<div className="timeline-start mb-10 md:text-end text-white p-4 font-playfair max-md:w-[90%] outlined text-xl">
 						<time className="italic text-accent">2016 - 2018</time>
-						<div className="text-lg font-black text-primary">
-							Floral Designer
-						</div>
-						<div className="text-lg font-black text-secondary">
+						<div className="font-black text-primary">Floral Designer</div>
+						<div className="font-black text-secondary">
 							Rolling Hills Flower Market
 						</div>
-						<div className="text-lg font-black text-white">
+						<div className="font-black text-white outlined-doubled">
 							Manhattan Beach, California
 						</div>
 					</div>

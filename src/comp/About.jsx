@@ -24,7 +24,7 @@ const About = () => {
 				</div>
 				<div className="lg:ml-10 flex flex-col items-center lg:justify-end lg:items-end">
 					<Header header="About" />
-					<p className="py-6 text-md text-end max-lg:text-center md:ml-12 text-2xl text-white lg:border-r-4 lg:border-primary lg:pr-4 drop-shadow-lg my-3 font-playfair max-sm:bg-black max-sm:bg-opacity-45">
+					<p className="py-6 text-md text-end max-lg:text-center md:ml-12 text-2xl text-white lg:border-r-4 lg:border-primary lg:pr-4 drop-shadow-lg my-3 font-playfair outlined-doubled">
 						With over a decade of industry experience, I’ve had the privilege of
 						freelancing for prestigious companies including East Olivia, Birch
 						Event Designs, 3 Petals, Stone Blossom, and many others. My

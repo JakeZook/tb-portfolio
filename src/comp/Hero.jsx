@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import "react-social-icons/email";
 
+import "./Page.css";
+
 import BG from "../assets/BG.png";
 import BloomingAnimation from "./BloomingAnimation";
 import Header from "./Header";
@@ -49,7 +51,7 @@ const Hero = () => {
 				</div>
 				<div className="lg:mr-10 max-lg:flex max-lg:flex-col justify-center items-center lg:mt-48">
 					<Header header="Taylor Beers" side="left" />
-					<p className="py-6 text-md max-lg:text-center md:mr-12 text-2xl text-white lg:border-l-4 lg:border-primary lg:pl-4 drop-shadow-lg my-3 font-playfair max-sm:bg-black max-sm:bg-opacity-45">
+					<p className="py-6 text-md max-lg:text-center md:mr-12 text-2xl text-white lg:border-l-4 lg:border-primary lg:pl-4 drop-shadow-lg my-3 font-playfair outlined-doubled">
 						Highly skilled and creative floral designer with a decade of
 						freelance experience and a passion for creating beautiful and unique
 						floral arrangements.

@@ -12,7 +12,7 @@ const Resume = () => {
 			</div>
 			<ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical max-md:hidden">
 				<motion.li
-					initial={{ opacity: 1, position: "relative", right: "100vh" }}
+					initial={{ opacity: 1, position: "relative", right: "30vh" }}
 					whileInView={{ right: 0 }}
 					viewport={{ once: true, amount: 0.25 }}
 					transition={{ duration: 1 }}
@@ -43,7 +43,7 @@ const Resume = () => {
 					<hr className="bg-primary" />
 				</motion.li>
 				<motion.li
-					initial={{ opacity: 1, position: "relative", left: "100vh" }}
+					initial={{ opacity: 1, position: "relative", left: "30vh" }}
 					whileInView={{ left: 0 }}
 					viewport={{ once: true, amount: 0.25 }}
 					transition={{ duration: 1 }}
@@ -76,7 +76,7 @@ const Resume = () => {
 					<hr className="bg-primary" />
 				</motion.li>
 				<motion.li
-					initial={{ opacity: 1, position: "relative", right: "100vh" }}
+					initial={{ opacity: 1, position: "relative", right: "30vh" }}
 					whileInView={{ right: 0 }}
 					viewport={{ once: true, amount: 0.25 }}
 					transition={{ duration: 1 }}

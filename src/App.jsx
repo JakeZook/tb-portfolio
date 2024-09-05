@@ -15,31 +15,31 @@ const App = () => {
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: true, amount: 0.25 }}
 				transition={{ duration: 1 }}
-				className="flex justify-center my-6"
+				className="flex justify-center mb-10 mt-4"
 			>
-				<Carousel images={ImageSet1} />
+				<Carousel images={ImageSet1} header="Ceremony" />
 			</motion.div>
 			<div style={{ backgroundImage: `url(${BG})` }}>
 				<About />
 			</div>
 			<motion.div
-				className="flex justify-center my-6"
+				className="flex justify-center mb-10 mt-4"
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: true, amount: 0.25 }}
 				transition={{ duration: 1 }}
 			>
-				<Carousel images={ImageSet2} />
+				<Carousel images={ImageSet2} header="Editorial" />
 			</motion.div>
 			<Resume />
 			<motion.div
-				className="flex justify-center mt-6"
+				className="flex justify-center mb-10 mt-4"
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				viewport={{ once: true, amount: 0.25 }}
 				transition={{ duration: 1 }}
 			>
-				<Carousel images={ImageSet3} />
+				<Carousel images={ImageSet3} header="Centerpieces" />
 			</motion.div>
 		</div>
 	);

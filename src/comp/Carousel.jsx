@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
+import "./Page.css";
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, header }) => {
 	const carouselRef = useRef(null);
 
 	const handlePrev = () => {
@@ -23,6 +24,9 @@ const Carousel = ({ images }) => {
 
 	return (
 		<div className="relative">
+			<h1 className="text-center text-white text-3xl p-0 font-pacifico outlined-doubled underline">
+				{header}
+			</h1>
 			<div
 				ref={carouselRef}
 				className="carousel carousel-center bg-emerald-900 rounded-box max-w-fit space-x-4 p-4 flex overflow-x-auto scroll-smooth"

@@ -28,7 +28,11 @@ const References = () => {
 	];
 
 	return (
-		<div style={{ backgroundImage: `url(${BG})` }} className="py-8">
+		<div
+			style={{ backgroundImage: `url(${BG})` }}
+			className="py-8"
+			id="references"
+		>
 			<div className="flex justify-center pb-4">
 				<Header header="References" side="middle" />
 			</div>
@@ -40,7 +44,7 @@ const References = () => {
 						viewport={{ once: true, amount: 0.25 }}
 						transition={{ duration: 1.5 }}
 						key={index}
-						className="flex justify-center pb-8 w-1/3 max-xl:w-full"
+						className="flex justify-center pb-8 w-1/3 max-xl:w-full max-sm:justify-start"
 					>
 						<div className="p-4 w-2/3 text-center max-xl:text-start max-xl:border-l-4 max-xl:border-primary max-xl:pl-4 max-xl:ml-4 xl:border-primary xl:border-b-4 xl:pb-4">
 							<h2 className="text-2xl font-bold text-primary outlined">

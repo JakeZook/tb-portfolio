@@ -83,6 +83,7 @@ const Contact = () => {
 				sent ? "min-h-[60vh]" : "min-h-screen"
 			}`}
 			style={{ backgroundImage: `url(${BG})` }}
+			id="contact"
 		>
 			{!sent && (
 				<form

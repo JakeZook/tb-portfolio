@@ -6,6 +6,7 @@ import About from "./About";
 import Resume from "./Resume";
 import References from "./References";
 import Contact from "./Contact";
+import Nav from "./Nav";
 
 export {
 	BloomingAnimation,
@@ -16,4 +17,5 @@ export {
 	Resume,
 	References,
 	Contact,
+	Nav,
 };

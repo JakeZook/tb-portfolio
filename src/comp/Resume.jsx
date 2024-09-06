@@ -6,7 +6,7 @@ import BG from "../assets/BG.png";
 
 const Resume = () => {
 	return (
-		<div style={{ backgroundImage: `url(${BG})` }} className="py-8">
+		<div style={{ backgroundImage: `url(${BG})` }} className="py-8" id="resume">
 			<div className="flex justify-center pb-8">
 				<Header header="Resume" side="middle" />
 			</div>

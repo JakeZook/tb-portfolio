@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { Hero, Carousel, About, Resume, References, Contact } from "./comp";
-import { ImageSet1, ImageSet2, ImageSet3 } from "./Utils/Index";
+import { ImageSet1, ImageSet2, ImageSet3, ImageSet4 } from "./Utils/Index";
 
 const App = () => {
 	return (
@@ -47,7 +47,7 @@ const App = () => {
 				viewport={{ once: true, amount: 0.25 }}
 				transition={{ duration: 1 }}
 			>
-				<Carousel images={ImageSet1} header="Bouquets" />
+				<Carousel images={ImageSet4} header="Bouquets" />
 			</motion.div>
 			<Contact />
 		</div>

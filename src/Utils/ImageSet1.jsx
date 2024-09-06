@@ -1,5 +1,6 @@
 import Arch from "../assets/Arch.jpg";
 import Arch2 from "../assets/Arch2.jpg";
+import Arch3 from "../assets/arch3.jpg";
 import Chairs from "../assets/Chairs.jpg";
 import Couple from "../assets/Couple.jpg";
 import Couple2 from "../assets/Couple2.jpg";
@@ -15,6 +16,7 @@ const images = [
 	Couple,
 	Arch2,
 	Couple6,
+	Arch3,
 	Chairs,
 	Couple5,
 	Isle,

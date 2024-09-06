@@ -8,7 +8,7 @@ const Navbar = () => {
 	return (
 		<nav className="w-full flex items-center py-5 fixed top-0 z-20 bg-transparent">
 			<div className="w-full flex justify-center items-center max-w-7xl mx-auto">
-				<ul className="list-none hidden sm:flex flex-row gap-10 text-3xl text-primary font-pacifico space-x-4 border-b-4 border-primary pb-2">
+				<ul className="list-none hidden sm:flex flex-row gap-10 text-3xl text-primary font-pacifico space-x-4 border-b-4 border-primary pb-2 bg-black p-2 bg-opacity-65">
 					<li className="hover:bg-transparent hover:text-secondary hover:scale-110 outlined-doubled">
 						<a href="#home">Home</a>
 					</li>

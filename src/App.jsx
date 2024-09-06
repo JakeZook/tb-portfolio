@@ -1,10 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { Hero, Carousel, About, Resume } from "./comp";
+import { Hero, Carousel, About, Resume, References, Contact } from "./comp";
 import { ImageSet1, ImageSet2, ImageSet3 } from "./Utils/Index";
-
-import BG from "./assets/BG.png";
 
 const App = () => {
 	return (
@@ -19,7 +17,7 @@ const App = () => {
 			>
 				<Carousel images={ImageSet1} header="Ceremony" />
 			</motion.div>
-			<div style={{ backgroundImage: `url(${BG})` }}>
+			<div>
 				<About />
 			</div>
 			<motion.div
@@ -41,6 +39,17 @@ const App = () => {
 			>
 				<Carousel images={ImageSet3} header="Centerpieces" />
 			</motion.div>
+			<References />
+			<motion.div
+				className="flex justify-center mb-10 mt-4"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				viewport={{ once: true, amount: 0.25 }}
+				transition={{ duration: 1 }}
+			>
+				<Carousel images={ImageSet1} header="Bouquets" />
+			</motion.div>
+			<Contact />
 		</div>
 	);
 };
